@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prasanna</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="jumbotron jumbotron-fluid" style=" background: rgba(0, 0, 0, 0.3)" >
+        <div class="container">
+             <h1 class="display-4" style="color:black">Insurance Cross Sell Prediction</h1>
+            <p class="lead" style="color:white" ><b>Hi this is the Machine Learning app which predicts weather the customer will buy the insurance or not.</b><br>This app is done by Prasanna
+             <a href="https://www.linkedin.com/in/prasanna-venkatesh-81998618b/">Linkdin</a> <a href="https://github.com/prasrahul">Github</a></p>
+        </div>
+    </div>
+    <div class="form-col" >
+        <form action="/prediction"  method="POST">
+            <center>
+             <div class="col-md-2 mb-3">
+                <label  for="Gender">Gender</label>
+                <select class="custom-select mr-sm-2" id="Gender" class="form-control" name="Gender">
+                    <option selected>choose</option>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+
+                 </select>
+             </div>
+
+             <div class="col-md-2 mb-4" style="color:black">
+                <label for="Age">Age</label>
+                <input type="number" name="Age" class="form-control" id="Age" value="Mark"   required placeholder="18-65">
+             </div>
+
+             <div class="col-md-2 mb-3">
+                <label  for="Previously_Insured">Previously Insured</label>
+                <select class="custom-select mr-sm-2" id="Previously_Insured" name="Previously_Insured" class="form-control">
+                    <option selected>choose</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+
+                 </select>
+             </div>
+             <div class="col-md-2 mb-3">
+                <label  for="Vehicle_Age">Vehicle Age</label>
+                <select class="custom-select mr-sm-2" id="Vehicle_Age" name="Vehicle_Age" class="form-control">
+                    <option selected>choose</option>
+                    <option value="2">more than 2 years</option>
+                    <option value="1">between 1 to 2 years</option>
+                    <option value="0">less than 1 year</option>
+
+                 </select>
+             </div>
+             <div class="col-md-2 mb-3">
+                <label  for="Vehicle_Damage">Vehicle Damaged?</label>
+                <select class="custom-select mr-sm-2" id="Vehicle_Damage" class="form-control" name="Vehicle_Damage">
+                    <option selected>choose</option>
+
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+
+                 </select>
+             </div>
+
+             <div class="col-md-2 mb-4" style="color:black">
+                <label for="Annual_Premium">Annual Premium</label>
+                <input type="number" name="Annual_Premium" class="form-control" id="Annual_Premium" value="Mark"   required placeholder="eg-45000">
+             </div>
+
+             <div class="col-md-2 mb-4" style="color:black">
+                <label for="Policy_Sales_Channel">Policy_Sales_Channel</label>
+                <input type="number" name="Policy_Sales_Channel" class="form-control" id="Policy_Sales_Channel" value="Mark"   required placeholder="eg-26">
+             </div>
+
+
+             <div class="col-auto">
+                   <button type="submit" class="btn btn-primary mb-2">Submit</button>
+             </div>
+            </center>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
